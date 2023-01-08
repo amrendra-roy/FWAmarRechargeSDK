@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'FWAmarRechargeSDK_Example' do
+  pod 'FWAmarRechargeSDK', :path => '../'
+
+  target 'FWAmarRechargeSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
