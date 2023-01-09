@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FWAmarRechargeSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FWAmarRechargeSDK.'
+  s.summary          = 'A SDK which provide recharge facilities only, created by terminal'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A framework created by Terminal with example, this is only for framework learning purpose. A SDK which provide recharge facilities only.
                        DESC
 
   s.homepage         = 'https://github.com/amrendra-roy/FWAmarRechargeSDK'
@@ -28,13 +28,13 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/amrendra-roy/FWAmarRechargeSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'FWAmarRechargeSDK/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'FWAmarRechargeSDK' => ['FWAmarRechargeSDK/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'AmarResources' => ['FWAmarRechargeSDK/Assets/Images/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
